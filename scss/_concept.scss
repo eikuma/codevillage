@@ -1,0 +1,76 @@
+.concept{
+    background: linear-gradient(180deg,$cream 0%,$cream 42%,$beige 42%,$beige 100%);
+}
+
+.concept-img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .c-img1{
+        width: 63%;
+        height: auto;
+        @include sp{
+            width: 49.5%;
+            height: 205px;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            @include sp{
+                height: 100%;
+                width: auto;
+                transform: translate(-150px);
+            }
+        }
+    }
+    .c-img2{
+        width: 36%;
+        height: auto;
+        @include sp{
+            width: 49.5%;
+            height: 205px;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            @include sp{
+                height: 100%;
+                width: auto;
+                transform: translate(-30px);
+            }
+        }
+    }
+}
+
+.concept-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+    color: white;
+    @include tab{
+        flex-direction: column;
+    }
+    .c-catch{
+        width: 55%;
+        font-size: 4rem;
+        text-align: center;
+        font-family: "MS Mincho";
+        @include tab{
+            font-size: 1.8rem;
+            margin-bottom: 18px;
+        }
+        
+    }
+    .c-txt{
+        width: 45%;
+        font-size: 1.6rem;
+        margin-right: 5%;
+        @include tab{
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}

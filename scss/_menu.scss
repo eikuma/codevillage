@@ -1,0 +1,36 @@
+.menu-wrap{
+    display: flex;
+    justify-content: space-between;
+    @include sp{
+        flex-direction: column;
+    }
+    .menu-item{
+        width: 25.5%;
+        @include sp{
+            width: 100%;
+            margin-bottom: 63px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .menu-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .m-content{
+            text-align: center;
+            font-size: 3rem;
+            margin: 34px 0;
+        }
+        .m-txt{
+            font-size: 1.6rem;
+            padding: 0 1.1rem 3.4rem 1.1rem;
+        }
+        .m-cost{
+            text-align: right;
+            font-size: 1.6rem;
+        }
+    }
+}

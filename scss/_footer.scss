@@ -1,0 +1,55 @@
+footer{
+    .inner{
+        padding-bottom: 0;
+    }
+}
+
+
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    border-top: #7070704D 1px solid;
+    margin-top: 171px;
+    padding-top: 90px;
+    @include sp{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 62px;
+        padding-top: 62px;
+    }
+    .f-account{
+        display: flex;
+        @include sp{
+            width: 100%;
+            justify-content: space-between;
+        }
+        h3{
+            font-size: 3.2rem;
+            color: #7070704D;
+            margin-right: 26px;
+            @include sp{
+                font-size: 1.8rem;
+            }
+        }
+        .sns{
+            font-size: 2rem;
+            line-height: 2.5;
+            display: flex;
+            .twitter{
+                margin-right: 9px;
+            }
+        }
+    }
+     .f-reserve{
+        width: 184px;
+        height: 37px;
+        font-size: 1.8rem;
+        line-height: 37px;
+        text-align: center;
+        color: $smoke;
+        border: $smoke 1px solid;
+        @include sp{
+            margin-bottom: 60px;
+        }
+    }
+}

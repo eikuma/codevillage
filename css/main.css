@@ -1,0 +1,541 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 12px;
+  line-height: 1.67;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-style: italic;
+  padding-top: 250px;
+}
+@media screen and (max-width: 959px) {
+  .title {
+    margin-bottom: 40px;
+    padding-top: 60px;
+  }
+}
+.title--bold {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 10rem;
+  margin-left: 1.7rem;
+}
+
+.inner {
+  width: 83.4%;
+  padding: 0 0 70px 0;
+  margin: 0 auto;
+}
+@media screen and (max-width: 959px) {
+  .inner {
+    width: 88.8%;
+    padding-bottom: 60px;
+  }
+}
+
+header {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 6.8rem;
+  left: 7.7rem;
+  z-index: 100;
+}
+@media screen and (max-width: 959px) {
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  margin-right: 2.5rem;
+  min-width: 30.6rem;
+}
+@media screen and (max-width: 600px) {
+  .hd-logo {
+    font-size: 2.2rem;
+    min-width: 0;
+  }
+}
+
+.pc-navmenu {
+  width: 54%;
+  min-width: 38.1rem;
+}
+.pc-navmenu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.pc-navmenu ul li:first-child:after {
+  display: block;
+  content: "";
+  width: 4rem;
+  border-top: 1px black solid;
+}
+.pc-navmenu ul li:nth-child(2), .pc-navmenu ul li:nth-child(3), .pc-navmenu ul li:nth-child(4) {
+  color: #707070;
+}
+@media screen and (max-width: 959px) {
+  .pc-navmenu {
+    display: none;
+  }
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 959px) {
+  .ham {
+    width: 16px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .ham span:last-child {
+    width: 50%;
+  }
+}
+
+.first-view {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  position: relative;
+}
+@media screen and (max-width: 959px) {
+  .first-view {
+    background-size: cover;
+    background-position: left;
+  }
+}
+.first-view .fv__wrap {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (max-width: 959px) {
+  .first-view .fv__wrap {
+    left: 50%;
+    flex-direction: column-reverse;
+    color: white;
+  }
+}
+.first-view .fv__wrap .j-catch {
+  font-size: 3.8rem;
+  font-family: "MS Mincho";
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .first-view .fv__wrap .j-catch {
+    font-size: 2.3rem;
+  }
+}
+.first-view .fv__wrap .e-catch {
+  font-size: 3.8rem;
+  font-family: 'Pinyon Script', cursive;
+}
+@media screen and (max-width: 600px) {
+  .first-view .fv__wrap .e-catch {
+    font-size: 2.8rem;
+  }
+}
+
+.concept {
+  background: linear-gradient(180deg, #A193861F 0%, #A193861F 42%, #A1938689 42%, #A1938689 100%);
+}
+
+.concept-img {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.concept-img .c-img1 {
+  width: 63%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .concept-img .c-img1 {
+    width: 49.5%;
+    height: 205px;
+    overflow: hidden;
+  }
+}
+.concept-img .c-img1 img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .concept-img .c-img1 img {
+    height: 100%;
+    width: auto;
+    transform: translate(-150px);
+  }
+}
+.concept-img .c-img2 {
+  width: 36%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .concept-img .c-img2 {
+    width: 49.5%;
+    height: 205px;
+    overflow: hidden;
+  }
+}
+.concept-img .c-img2 img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .concept-img .c-img2 img {
+    height: 100%;
+    width: auto;
+    transform: translate(-30px);
+  }
+}
+
+.concept-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 70px;
+  color: white;
+}
+@media screen and (max-width: 959px) {
+  .concept-content {
+    flex-direction: column;
+  }
+}
+.concept-content .c-catch {
+  width: 55%;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "MS Mincho";
+}
+@media screen and (max-width: 959px) {
+  .concept-content .c-catch {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+}
+.concept-content .c-txt {
+  width: 45%;
+  font-size: 1.6rem;
+  margin-right: 5%;
+}
+@media screen and (max-width: 959px) {
+  .concept-content .c-txt {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .menu-wrap {
+    flex-direction: column;
+  }
+}
+.menu-wrap .menu-item {
+  width: 25.5%;
+}
+@media screen and (max-width: 600px) {
+  .menu-wrap .menu-item {
+    width: 100%;
+    margin-bottom: 63px;
+  }
+  .menu-wrap .menu-item:last-child {
+    margin-bottom: 0;
+  }
+}
+.menu-wrap .menu-item .menu-img {
+  width: 100%;
+}
+.menu-wrap .menu-item .menu-img img {
+  width: 100%;
+}
+.menu-wrap .menu-item .m-content {
+  text-align: center;
+  font-size: 3rem;
+  margin: 34px 0;
+}
+.menu-wrap .menu-item .m-txt {
+  font-size: 1.6rem;
+  padding: 0 1.1rem 3.4rem 1.1rem;
+}
+.menu-wrap .menu-item .m-cost {
+  text-align: right;
+  font-size: 1.6rem;
+}
+
+.access {
+  background-color: #A193861F;
+  padding-bottom: 70px;
+}
+.access .title {
+  padding-left: 8.3%;
+}
+.access .access-wrap {
+  background-color: #D0C5BA;
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .access .access-wrap {
+    flex-direction: column-reverse;
+  }
+}
+.access .access-wrap .a-content {
+  width: 40%;
+  height: 396px;
+  padding-left: 8.3%;
+  line-height: 2.5;
+  background-color: #D0C5BA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .access .access-wrap .a-content {
+    width: 100%;
+    height: 282px;
+    padding-left: 5.6%;
+  }
+}
+.access .access-wrap .a-content h3 {
+  font-size: 2.4rem;
+  color: #00000038;
+}
+.access .access-wrap .a-content p {
+  font-size: 1.6rem;
+  color: white;
+}
+.access .access-wrap .a-map {
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  .access .access-wrap .a-map {
+    width: 100%;
+    height: 230px;
+  }
+}
+.access .access-wrap .a-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer .inner {
+  padding-bottom: 0;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-top: #7070704D 1px solid;
+  margin-top: 171px;
+  padding-top: 90px;
+}
+@media screen and (max-width: 600px) {
+  .footer-wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 62px;
+    padding-top: 62px;
+  }
+}
+.footer-wrap .f-account {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .footer-wrap .f-account {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.footer-wrap .f-account h3 {
+  font-size: 3.2rem;
+  color: #7070704D;
+  margin-right: 26px;
+}
+@media screen and (max-width: 600px) {
+  .footer-wrap .f-account h3 {
+    font-size: 1.8rem;
+  }
+}
+.footer-wrap .f-account .sns {
+  font-size: 2rem;
+  line-height: 2.5;
+  display: flex;
+}
+.footer-wrap .f-account .sns .twitter {
+  margin-right: 9px;
+}
+.footer-wrap .f-reserve {
+  width: 184px;
+  height: 37px;
+  font-size: 1.8rem;
+  line-height: 37px;
+  text-align: center;
+  color: #707070;
+  border: #707070 1px solid;
+}
+@media screen and (max-width: 600px) {
+  .footer-wrap .f-reserve {
+    margin-bottom: 60px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

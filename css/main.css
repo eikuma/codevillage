@@ -172,6 +172,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 7rem;
     background-color: white;
     justify-content: space-between;
     padding: 0 20px;
@@ -183,7 +184,7 @@ header {
   margin-right: 2.5rem;
   min-width: 30.6rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
   .hd-logo {
     font-size: 2.2rem;
     min-width: 0;
@@ -275,18 +276,21 @@ header {
   font-family: "MS Mincho";
   font-weight: bold;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
   .first-view .fv__wrap .j-catch {
+    min-width: 267px;
     font-size: 2.3rem;
+    width: 100%;
   }
 }
 .first-view .fv__wrap .e-catch {
-  font-size: 3.8rem;
+  font-size: 7.8rem;
   font-family: 'Pinyon Script', cursive;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
   .first-view .fv__wrap .e-catch {
-    font-size: 2.8rem;
+    min-width: 260px;
+    font-size: 5rem;
   }
 }
 

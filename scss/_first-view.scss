@@ -28,15 +28,18 @@
                 font-size: 3.8rem;
                 font-family: "MS Mincho";
                 font-weight: bold;
-                @include sp{
+                @include tab{
+                    min-width: 267px;
                     font-size: 2.3rem;
+                    width: 100%;
                 }
             }
             .e-catch{
-                font-size: 3.8rem;
+                font-size: 7.8rem;
                 font-family: 'Pinyon Script', cursive;
-                @include sp{
-                    font-size: 2.8rem;
+                @include tab{
+                    min-width: 260px;
+                    font-size: 5rem;
                 }
             }
         }
